@@ -9,7 +9,7 @@ const AdminAttendanceComponent = () => {
   useEffect(() => {
     const getList = async () => {
       try {
-        const { data } = await axios.get('http://localhost:8080/list');
+        const { data } = await axios.get('https://api.unlimitedjo.store/list');
         setBookList(data);
       } catch (error) {
         console.error(error);

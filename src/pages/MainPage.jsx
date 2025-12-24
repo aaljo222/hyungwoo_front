@@ -10,7 +10,7 @@ const MainPage = () => {
   return (
     <div>
       <div>
-        <a href="http://localhost:3000"><LogoLayout /></a>
+        <a href="https://www.unlimitedjo.store/list"><LogoLayout /></a>
       </div>
       <div className="h-[20%] flex items-start justify-start pl-10">
         <AnimatedBorderBox />

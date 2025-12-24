@@ -8,7 +8,7 @@ const LogoLayout = () => {
   return (
     <div className="w-full overflow-hidden h-screen grid place-items-center bg-white">
       <div className="relative w-[50%] aspect-square">
-        <Link href="http://localhost:3000">
+        <Link href="https://api.www.unlimitedjo.store">
           {/* 가운데 로고: 기존처럼 rotate */}
           <img
             src={Logo2}
@@ -22,7 +22,7 @@ const LogoLayout = () => {
           <TextRingComponent />
         </div>
       </div>
-      <img src="http://localhost:8080/uploads/b48bef17-bf62-49a7-9c2f-bb12fe307097.jpg"></img>
+      <img src="https://api.unlimitedjo.store/uploads/b48bef17-bf62-49a7-9c2f-bb12fe307097.jpg"></img>
     </div>
   );
 };
