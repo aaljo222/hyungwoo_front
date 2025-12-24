@@ -1,7 +1,8 @@
 import axios from "axios";
 import React from "react";
 
-export const API_SERVER_HOST = "http://api.unlimitedjo.store";
+export const API_SERVER_HOST = "https://api.unlimitedjo.store";
+
 
 // type정의
 // 오타 방지 및 일관성에 도움이 됩니다.
