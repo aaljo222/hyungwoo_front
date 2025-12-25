@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { Navigate } from "react-router-dom";
 
-const Loading = () => <div>Loading...</div>;
+const Loading = <div>Loading...</div>;
 
 const Login = lazy(() =>
   import("../pages/authentication_Account_Security/LoginPage")

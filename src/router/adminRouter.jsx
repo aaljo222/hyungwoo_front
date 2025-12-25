@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from "react";
 
-const Loading = () => <div>Loading...</div>;
+const Loading = <div>Loading...</div>;
 
 const AdminOne = lazy(() => import("../pages/admin/AdminOnePage"));
 
