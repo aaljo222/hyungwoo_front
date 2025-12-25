@@ -4,7 +4,12 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [
     react({
-      jsxRuntime: "automatic", // ⭐ 이게 핵심
+      jsxRuntime: "automatic",
     }),
   ],
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+  },
+  base: "/",
 });
