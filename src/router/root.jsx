@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
 
 import BasicLayout from "../layouts/BasicLayout";
+import AdminLayout from "../layouts/AdminLayout"; // ⭐ 추가
 
 import aboutGreenRouter from "./aboutGreenRouter";
 import academicSupportRouter from "./academicSupportRouter";
@@ -69,13 +70,17 @@ const root = createBrowserRouter([
         path: "account",
         children: accountRouter(),
       },
-
-      // 🔐 Admin
-      {
-        path: "admin",
-        children: adminRouter(),
-      },
     ],
+  },
+  // ⭐ Admin은 별도 라우트로 분리
+  {
+    path: "/admin",
+    element: (
+      <Suspense fallback={Loading}>
+        <AdminLayout />
+      </Suspense>
+    ),
+    children: adminRouter(),
   },
 ]);
 
